@@ -1,3 +1,4 @@
+////////////////////////////////////////////////
 // Smooth scrolling for navigation links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
@@ -7,7 +8,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+/////////////////////////////////////////////////
 
+///////////////////////////////////////////////////////
 // Add active class to navigation links based on scroll position
 window.addEventListener('scroll', () => {
     let scrollPosition = window.scrollY;
@@ -23,7 +26,10 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+/////////////////////////////////////////////////
 
+
+////////////////////////////////////////////
 // Animate elements on scroll
 const animateOnScroll = () => {
     const elements = document.querySelectorAll('.animate-on-scroll');
@@ -37,10 +43,13 @@ const animateOnScroll = () => {
         }
     });
 }
+////////////////////////////////////////////
 
 window.addEventListener('scroll', animateOnScroll);
 window.addEventListener('load', animateOnScroll);
 
+
+///////////////////////////////////////
 // Form submission handling
 const form = document.querySelector('form');
 form.addEventListener('submit', (e) => {
@@ -49,29 +58,42 @@ form.addEventListener('submit', (e) => {
     alert('Form submitted successfully!');
     form.reset();
 });
+////////////////////////////////////////
 
-// Dark mode toggle functionality
-const darkModeToggle = document.getElementById('dark-mode-toggle');
+//////////////////////////////////////////
+// Dark Mode Feature
+const themeToggleBtn = document.getElementById('theme-toggle');
 const body = document.body;
 
-// Check for saved user preference
-const darkMode = localStorage.getItem('darkMode');
-
-// Set initial dark mode state
-if (darkMode === 'enabled') {
-    body.classList.add('dark-mode');
-    darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-}
-
-// Toggle dark mode
-darkModeToggle.addEventListener('click', () => {
+themeToggleBtn.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
     
-    if (body.classList.contains('dark-mode')) {
-        localStorage.setItem('darkMode', 'enabled');
-        darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    // Change button text
+    if(body.classList.contains('dark-mode')) {
+        themeToggleBtn.textContent = 'Light Mode';
     } else {
-        localStorage.setItem('darkMode', null);
-        darkModeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        themeToggleBtn.textContent = 'Dark Mode';
     }
 });
+
+
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme === 'dark') {
+    body.classList.add('dark-mode');
+    themeToggleBtn.textContent = 'Light Mode';
+}
+
+themeToggleBtn.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    
+    if(body.classList.contains('dark-mode')) {
+        themeToggleBtn.textContent = 'Light Mode';
+        localStorage.setItem('theme', 'dark');
+    } else {
+        themeToggleBtn.textContent = 'Dark Mode';
+        localStorage.setItem('theme', 'light');
+    }
+});
+
+//////////////////////////////////////
