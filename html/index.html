@@ -3,23 +3,23 @@
 
 
 <!-- Head -->
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Krutivas Pradhan | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Krutivas Pradhan | Portfolio</title>
 
   <!-- Link to stylesheets -->
-	<link rel="stylesheet" href="../style/style.css">
-	<link rel="stylesheet" href="../style/mediaqueries.css">
-  
-  <!-- Add Font Awesome for icons -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-</head> 
+  <link rel="stylesheet" href="../style/style.css">
+  <link rel="stylesheet" href="../style/mediaqueries.css">
+
+
+</head>
 
 
 
 
+<!-- Body -->
 
 <body>
   <!-- Header with navigation -->
@@ -27,18 +27,37 @@
     <nav id="desktop-nav">
       <div class="logo">Krutivas Pradhan</div>
       <div>
-        <ul class ="nav-links">
+        <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About Me</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>     
-       </ul>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
     </nav>
 
+    <!--Hamburger Section-->
+    <nav id="hamburger-nav">
+      <div class="logo">Krutivas Pradhan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
 
-       
+        <div class="menu-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+
+        </div>
+    </nav>
+
+
 
 
   </header>
@@ -64,18 +83,18 @@
 
   <!-- Projects Section -->
   <section id="projects">
-  	<h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Project 1</h3>
-                <p>Description of the project...</p>
-                <div class="project-links">
-                    <a href="[Live Demo]" target="_blank" class="btn">Live Demo</a>
-                    <a href="[GitHub Repo]" target="_blank" class="btn">GitHub</a>
-                </div>
-            </div>
-            <!-- Add more project cards as needed -->
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project 1</h3>
+        <p>Description of the project...</p>
+        <div class="project-links">
+          <a href="[Live Demo]" target="_blank" class="btn">Live Demo</a>
+          <a href="[GitHub Repo]" target="_blank" class="btn">GitHub</a>
         </div>
+      </div>
+      <!-- Add more project cards as needed -->
+    </div>
   </section>
 
 
@@ -83,7 +102,7 @@
   <!-- Resume Section -->
   <section id="resume">
     <h2>Resume</h2>
-  	<a href="resume.pdf" download class="btn"><i class="fas fa-download"></i> Download My Resume</a>   
+    <a href="resume.pdf" download class="btn"><i class="fas fa-download"></i> Download My Resume</a>
   </section>
 
 
@@ -103,9 +122,9 @@
   <footer>
     <p>&copy; 2024 Your Name. All Rights Reserved.</p>
   </footer>
-  
+
   <!-- Path to script.js -->
-  <script src="../script/scripts.js"></script>
+  <script src="../script/script.js"></script>
 
 
 </body>
