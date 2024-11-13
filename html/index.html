@@ -63,65 +63,38 @@
   </header>
 
 
+  <section id="profile">
+    
+    <!--Profile Pic-->
+    <div class="section_pic-container">
+      <img src="../assets/profile-pic.jpeg" alt="Krutivas Pradhan profile pic" />
+    </div>
 
-  <!-- Home Section -->
-  <section id="home">
-    <h1>Hello, I'm Krutivas Pradhan</h1>
-    <p>Computer Science Major | Web Developer | Programmer</p>
-  </section>
-
-
-
-  <!-- About me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Work in Progress.....</p>
-  </section>
-
-
-
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Project 1</h3>
-        <p>Description of the project...</p>
-        <div class="project-links">
-          <a href="[Live Demo]" target="_blank" class="btn">Live Demo</a>
-          <a href="[GitHub Repo]" target="_blank" class="btn">GitHub</a>
+    <!--Text Introduction, Buttons, and Socials-->
+    <div class="section_text">
+      <p class="section_text_p1">Hello, I'm</p>
+      <h1 class="title">Krutivas Pradhan</h1>
+      <p class="section_text_p2">Frontend Developer</p>
+      
+        <!--Buttons-->
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="window.open('../assets/resume-example.pdf')">Download Resume</button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
         </div>
-      </div>
-      <!-- Add more project cards as needed -->
+        
+        
+        <!--Socials Section-->
+        <div id="socials-container">
+          <!--Linkedin-->
+          <img src="../assets/linkedin.png" alt="My Linked profile" class="icon"
+            onclick="location.href='https://linkedin.com/'" />
+          <!--Github-->
+          <img src="../assets/github.png" alt="My Github profile" class="icon"
+            onclick="location.href='https://github.com/'" />
+        </div>
     </div>
   </section>
 
-
-
-  <!-- Resume Section -->
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="resume.pdf" download class="btn"><i class="fas fa-download"></i> Download My Resume</a>
-  </section>
-
-
-
-  <!-- Contact Section -->
-  <section id="contact">
-    <h2>Contact</h2>
-    <form action="mailto:your.email@example.com" method="post" enctype="text/plain">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 Your Name. All Rights Reserved.</p>
-  </footer>
 
   <!-- Path to script.js -->
   <script src="../script/script.js"></script>
