@@ -79,7 +79,7 @@
     .about-containers,
     .contact-info-upper-container,
     .btn-container{
-        flex-wrap;
+        flex-wrap: wrap;
     }
     .contact-info-container{
         margin: 0;
@@ -113,7 +113,7 @@
     .text-container{
         text-align: justify;
     }
-    
+
 
 }
 
